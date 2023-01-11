@@ -14,13 +14,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
-        statusBarColor: Colors.purple,
-        systemNavigationBarColor: Colors.purple.withOpacity(0.5),
+        statusBarColor: Colors.transparent,
+        systemNavigationBarColor: Colors.grey.withOpacity(0.5),
       ),
     );
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.grey,
       ),
       home: const HomeScreen(),
     );

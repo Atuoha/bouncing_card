@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 
 import '../model/book.dart';
 
-List availableBooks = [
+List books = [
   Book(
     id: 1,
     title: "This is The Way",
